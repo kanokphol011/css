@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="image/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/signupform.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <legend>
+        <h1><center>&nbsp;<i>Welcome to the System<br></center></i></h1></legend>
+      <div class="wrapper">
+        <div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+          <strong>Incorrect!!! : </strong>
+          <span style="color:blue;font-weight:bold" id="summary">
+      Your form contains tons of errors! Please try again.</span>
+        </div>
+        <div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+          <strong>Regist Successful!!!</strong>
+        </div>
+
+        <form id="signupForm" class="form-signup" action="" method="POST" role="form">
+          <center>
+            <h2 class="form-signin-heading">Register for a new user</h2></center>
+
+          <div class="form-group">
+            <h4><label for="username">Username</label></h4>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username has max length to 12" maxlength="12" autofocus/>
+          </div>
+
+          <div class="form-group">
+            <h4><label for="password">Password</label></h4>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password has max length to 12" maxlength="12">
+          </div>
+
+          <div class="form-group">
+            <h4><label for="con_password">Confirm Password</label></h4>
+            <input type="password" class="form-control" id="con_password" name="con_password" placeholder="Password has max length to 12" maxlength="12">
+          </div>
+
+          <div class="form-group">
+            <h4><label for="fname">First name</label></h4>
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="Put a First Name here.">
+          </div>
+
+          <div class="form-group">
+            <h4><label for="lname">Last name</label></h4>
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="Put a Last Name here.">
+          </div>
+
+          <div class="form-group">
+            <h4><label for="email">E-Mail Address</label></h4>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Put an E-mail here.">
+          </div>
+
+          <div class="form-group">
+            <h4><label for="tel">Telephone</label></h4>
+            <input type="text" class="form-control" id="tel" name="tel" maxlength="10" placeholder="Put a Telephone here.">
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-lg btn-primary btn-block" id="signup" name="button">Register</button>
+          </div>
+          <div class="form-group">
+            <a href="Signin.html" role="button" class="btn btn-lg btn-primary btn-block">Back to login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/cache.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/singup.js"></script>
+</body>
+
+</html>

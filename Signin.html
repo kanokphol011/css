@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="image/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/signin.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <legend><h1><center>&nbsp;<i>Welcome to the System<br></center></i></h1></legend>
+      <div class="wrapper">
+        <form id="form" class="form-signin" action="" method="POST" role="form">
+          <center>
+            <h2 class="form-signin-heading">Login to the system</h2></center>
+          <div class="form-group">
+            <h4><label for="username">Username</label></h4>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Put a Username here." maxlength="12" autofocus/>
+          </div>
+          <div class="form-group">
+            <h4><label for="password">Password</label></h4>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Put a Password here." maxlength="12">
+          </div>
+          <div class="form-group">
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember Me</label>
+            </div>
+            <button type="submit" id="signin" name="button" onclick="create()" class="btn btn-lg btn-primary btn-block">Login</button><br>
+        </form>
+        <a href="Signup.html" role="button" class="btn btn-lg btn-primary btn-block">Sign Up</a><br>
+        <a href="index.html" role="button" class="btn btn-lg btn-warning btn-block">Back to Home</a>
+        </div>
+        <div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+          <strong>Incorrect username or password</strong><br>
+          <span style="color:blue;font-weight:bold" id="summary"></span>
+        </div>
+        <div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+          <strong>Login Successful!!!</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/cache.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/singins.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript">
+    function create() {
+      $.cookie('keep', 'user data');
+      console.log($.cookie('keep'));
+    }
+  </script>
+</body>
+
+</html>
